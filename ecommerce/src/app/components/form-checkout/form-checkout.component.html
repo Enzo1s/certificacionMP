@@ -1,0 +1,20 @@
+<form id="form-checkout">
+  <input type="text" name="cardNumber" id="form-checkout__cardNumber" placeholder="Numero tarjeta" />
+  <input type="text" name="cardExpirationMonth" id="form-checkout__cardExpirationMonth"
+    placeholder="Mes de vencimiento" />
+  <input type="text" name="cardExpirationYear" id="form-checkout__cardExpirationYear"
+    placeholder="Año de vencimiento" />
+  <input type="text" name="cardholderName" id="form-checkout__cardholderName" placeholder="Titular de la Tarjeta" />
+  <input type="email" name="cardholderEmail" id="form-checkout__cardholderEmail" placeholder="Email" />
+  <label for="">Banco Emisor</label>
+  <input type="text" name="securityCode" id="form-checkout__securityCode" placeholder="Codigo de seguridad" />
+  <select name="issuer" id="form-checkout__issuer"></select>
+  <label for="">Tipo de Documento</label>
+  <select name="identificationType" id="form-checkout__identificationType"></select>
+  <input type="text" name="identificationNumber" id="form-checkout__identificationNumber"
+    placeholder="Numero de documento" />
+  <label for="form-checkout__installments"> Cuotas</label>
+  <select name="installments" id="form-checkout__installments"></select>
+  <button type="submit" id="form-checkout__submit">Pagar</button>
+  <progress value="0" class="progress-bar">Cargando...</progress>
+</form>

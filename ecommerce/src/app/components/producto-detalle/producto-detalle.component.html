@@ -1,0 +1,25 @@
+<hr>
+<div class="row">
+  <div class="col-md-4" style="text-align: center;">
+    <img src="{{producto.urlImagen}}" [alt]="producto.nombre">
+
+  </div>
+  <div class="col-md-8">
+    <h3 style="color: darkslategrey">{{producto.nombre}}</h3>
+    <hr>
+    <p><b>Precio:</b> ${{producto.precio}}</p>
+    <p><b>descripcion:</b> {{producto.descripcion}}</p>
+    <p>
+      <input type="number" [(ngModel)]="cantidad">
+      <b>stock:</b> {{producto.stock}}
+    </p>
+    <div>
+      <a [routerLink]="['/productos']" class="btn btn-outline-secondary btn-block">Volver</a>
+      <span *ngIf="producto.stock >0" style="color:green; font-weight: bold;">
+        <button class="btn btn-outline-primary btn-block" [routerLink]="['/productos/sale/form']"
+          routerLinkActive="router-link-active"> Comprar</button>
+      </span>
+
+    </div>
+  </div>
+</div>

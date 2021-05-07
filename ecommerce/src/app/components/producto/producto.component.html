@@ -1,0 +1,9 @@
+<h2>Nuestros Productos</h2>
+<div class="container">
+  <div class="card-deck">
+    <app-item-producto (productoSeleccionado)="verProducto($evet)" *ngFor="let producto of productos; let i = index"
+      [productoAux]="producto" [index]="producto.id">
+
+    </app-item-producto>
+  </div>
+</div>
